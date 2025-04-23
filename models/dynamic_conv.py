@@ -89,11 +89,13 @@ class BasicBlock(nn.Module):
         return self.relu(out)
 
 class DynamicConv(nn.Module):
-    def __init__(self, in_channels, out_channels, kernel_size=3, hidden_dim=64):
+    def __init__(self, in_channels, out_channels, kernel_size=3, stride=1, padding=1, hidden_dim=64):
         super(DynamicConv, self).__init__()
         self.kernel_size = kernel_size
         self.out_channels = out_channels
-
+        self.stride = stride
+        self.padding = padding
+        
         # Kernel generator network: input is a global pooled feature
         self.kernel_gen = nn.Sequential(
             nn.AdaptiveAvgPool2d(1),
@@ -104,7 +106,7 @@ class DynamicConv(nn.Module):
         )
 
         self.in_channels = in_channels
-
+        
     def forward(self, x):
         batch_size, in_c, H, W = x.size()
 
@@ -114,9 +116,14 @@ class DynamicConv(nn.Module):
 
         # Reshape input for grouped conv
         x = x.view(1, batch_size * in_c, H, W)
-        out = F.conv2d(x, weight=weights, bias=None, stride=1, padding=self.kernel_size // 2, groups=batch_size)
-        out = out.view(batch_size, self.out_channels, H, W)
-
+        # out = F.conv2d(x, weight=weights, bias=None, stride=1, padding=self.kernel_size // 2, groups=batch_size)
+        out = F.conv2d(
+            x, weight=weights, bias=None,
+            stride=self.stride, padding=self.padding, groups=batch_size
+        )
+        # out = out.view(batch_size, self.out_channels, H, W)
+        _, _, H_out, W_out = out.shape
+        out = out.view(batch_size, self.out_channels, H_out, W_out)
         return out
 
 class ResNet34_Dynamic(nn.Module):
