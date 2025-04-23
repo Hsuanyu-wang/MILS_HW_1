@@ -1,0 +1,43 @@
+_wandb:
+    value:
+        cli_version: 0.19.9
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 41
+                - 55
+            "2":
+                - 1
+                - 41
+                - 55
+            "3":
+                - 1
+                - 2
+                - 13
+                - 23
+                - 55
+                - 62
+            "4": 3.10.12
+            "5": 0.19.9
+            "8":
+                - 5
+            "12": 0.19.9
+            "13": linux-x86_64
+batch_size:
+    value: 64
+device:
+    value: cuda
+epochs:
+    value: 20
+learning_rate:
+    value: 0.001
+model:
+    value: wide_cnn
+optimizer:
+    value: Adam
+train_samples:
+    value: 63325
+val_samples:
+    value: 450

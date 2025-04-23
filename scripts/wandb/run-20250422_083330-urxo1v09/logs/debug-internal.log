@@ -1,0 +1,16 @@
+{"time":"2025-04-22T08:33:30.072812218Z","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/home/MILS_HW1/scripts/wandb/run-20250422_083330-urxo1v09/logs/debug-core.log"}
+{"time":"2025-04-22T08:33:30.486548246Z","level":"INFO","msg":"created new stream","id":"urxo1v09"}
+{"time":"2025-04-22T08:33:30.486577676Z","level":"INFO","msg":"stream: started","id":"urxo1v09"}
+{"time":"2025-04-22T08:33:30.486619986Z","level":"INFO","msg":"writer: Do: started","stream_id":"urxo1v09"}
+{"time":"2025-04-22T08:33:30.486654938Z","level":"INFO","msg":"sender: started","stream_id":"urxo1v09"}
+{"time":"2025-04-22T08:33:30.486708856Z","level":"INFO","msg":"handler: started","stream_id":"urxo1v09"}
+{"time":"2025-04-22T08:33:30.882547693Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-22T11:42:42.724837154Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-22T11:42:42.72486335Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-22T11:42:43.726499541Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.512043768,"progress":"167.9KB/167.9KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.51203349,"progress":"25.0KB/25.0KB"},{"desc":"uploading config.yaml","runtime_seconds":0.286763093,"progress":"762B/762B"}],"total_operations":3}}
+{"time":"2025-04-22T11:42:44.025861403Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-22T11:42:44.370846453Z","level":"INFO","msg":"stream: closing","id":"urxo1v09"}
+{"time":"2025-04-22T11:42:44.37085772Z","level":"INFO","msg":"handler: closed","stream_id":"urxo1v09"}
+{"time":"2025-04-22T11:42:44.370863733Z","level":"INFO","msg":"writer: Close: closed","stream_id":"urxo1v09"}
+{"time":"2025-04-22T11:42:44.370898846Z","level":"INFO","msg":"sender: closed","stream_id":"urxo1v09"}
+{"time":"2025-04-22T11:42:44.370913679Z","level":"INFO","msg":"stream: closed","id":"urxo1v09"}

@@ -1,0 +1,16 @@
+{"time":"2025-04-23T09:11:55.526958112Z","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/home/MILS_HW1/scripts/wandb/run-20250423_091155-biclciz0/logs/debug-core.log"}
+{"time":"2025-04-23T09:11:55.864892217Z","level":"INFO","msg":"created new stream","id":"biclciz0"}
+{"time":"2025-04-23T09:11:55.86498622Z","level":"INFO","msg":"stream: started","id":"biclciz0"}
+{"time":"2025-04-23T09:11:55.865107459Z","level":"INFO","msg":"writer: Do: started","stream_id":"biclciz0"}
+{"time":"2025-04-23T09:11:55.865164202Z","level":"INFO","msg":"handler: started","stream_id":"biclciz0"}
+{"time":"2025-04-23T09:11:55.865336071Z","level":"INFO","msg":"sender: started","stream_id":"biclciz0"}
+{"time":"2025-04-23T09:11:56.205578646Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-23T09:24:34.895734562Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-23T09:24:34.895765573Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-23T09:24:35.901978179Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.43332714,"progress":"175.5KB/175.5KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.433309479,"progress":"343.2KB/343.2KB"},{"desc":"uploading config.yaml","runtime_seconds":0.197272136,"progress":"767B/767B"}],"total_operations":3}}
+{"time":"2025-04-23T09:24:36.50160682Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-23T09:24:37.381529321Z","level":"INFO","msg":"stream: closing","id":"biclciz0"}
+{"time":"2025-04-23T09:24:37.381541405Z","level":"INFO","msg":"handler: closed","stream_id":"biclciz0"}
+{"time":"2025-04-23T09:24:37.381548139Z","level":"INFO","msg":"writer: Close: closed","stream_id":"biclciz0"}
+{"time":"2025-04-23T09:24:37.381576152Z","level":"INFO","msg":"sender: closed","stream_id":"biclciz0"}
+{"time":"2025-04-23T09:24:37.381594859Z","level":"INFO","msg":"stream: closed","id":"biclciz0"}

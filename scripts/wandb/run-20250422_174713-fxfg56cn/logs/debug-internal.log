@@ -1,0 +1,17 @@
+{"time":"2025-04-22T17:47:13.717940117Z","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/home/MILS_HW1/scripts/wandb/run-20250422_174713-fxfg56cn/logs/debug-core.log"}
+{"time":"2025-04-22T17:47:14.040914921Z","level":"INFO","msg":"created new stream","id":"fxfg56cn"}
+{"time":"2025-04-22T17:47:14.04101249Z","level":"INFO","msg":"stream: started","id":"fxfg56cn"}
+{"time":"2025-04-22T17:47:14.041108608Z","level":"INFO","msg":"writer: Do: started","stream_id":"fxfg56cn"}
+{"time":"2025-04-22T17:47:14.041196419Z","level":"INFO","msg":"handler: started","stream_id":"fxfg56cn"}
+{"time":"2025-04-22T17:47:14.041292498Z","level":"INFO","msg":"sender: started","stream_id":"fxfg56cn"}
+{"time":"2025-04-22T17:47:14.321979044Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-22T18:16:15.206881851Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/q56134102-national-cheng-kung-university-co-op/MILS_HW1/fxfg56cn/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-04-22T18:29:48.076713272Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-22T18:29:48.076760691Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-22T18:29:49.08178548Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.563356792,"progress":"166.1KB/166.1KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.563333688,"progress":"343.2KB/343.2KB"},{"desc":"uploading config.yaml","runtime_seconds":0.327612764,"progress":"763B/763B"}],"total_operations":3}}
+{"time":"2025-04-22T18:29:49.499830668Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-22T18:29:50.242612898Z","level":"INFO","msg":"stream: closing","id":"fxfg56cn"}
+{"time":"2025-04-22T18:29:50.242624181Z","level":"INFO","msg":"handler: closed","stream_id":"fxfg56cn"}
+{"time":"2025-04-22T18:29:50.242629926Z","level":"INFO","msg":"writer: Close: closed","stream_id":"fxfg56cn"}
+{"time":"2025-04-22T18:29:50.242663336Z","level":"INFO","msg":"sender: closed","stream_id":"fxfg56cn"}
+{"time":"2025-04-22T18:29:50.242683823Z","level":"INFO","msg":"stream: closed","id":"fxfg56cn"}

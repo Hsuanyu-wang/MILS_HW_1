@@ -1,0 +1,16 @@
+{"time":"2025-04-22T06:12:00.702439427Z","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/home/MILS_HW1/scripts/wandb/run-20250422_061200-c62vcpz8/logs/debug-core.log"}
+{"time":"2025-04-22T06:12:01.07144979Z","level":"INFO","msg":"created new stream","id":"c62vcpz8"}
+{"time":"2025-04-22T06:12:01.071473796Z","level":"INFO","msg":"stream: started","id":"c62vcpz8"}
+{"time":"2025-04-22T06:12:01.071544627Z","level":"INFO","msg":"writer: Do: started","stream_id":"c62vcpz8"}
+{"time":"2025-04-22T06:12:01.071550434Z","level":"INFO","msg":"handler: started","stream_id":"c62vcpz8"}
+{"time":"2025-04-22T06:12:01.071569173Z","level":"INFO","msg":"sender: started","stream_id":"c62vcpz8"}
+{"time":"2025-04-22T06:12:01.429902111Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-22T07:47:44.228125756Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/q56134102-national-cheng-kung-university-co-op/MILS_HW1/c62vcpz8/file_stream\": EOF"}
+{"time":"2025-04-22T08:11:42.68780105Z","level":"INFO","msg":"stream: closing","id":"c62vcpz8"}
+{"time":"2025-04-22T08:11:42.687821997Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-22T08:11:42.687859053Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-22T08:11:43.747186521Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-22T08:11:44.17798962Z","level":"INFO","msg":"handler: closed","stream_id":"c62vcpz8"}
+{"time":"2025-04-22T08:11:44.178015985Z","level":"INFO","msg":"writer: Close: closed","stream_id":"c62vcpz8"}
+{"time":"2025-04-22T08:11:44.178047082Z","level":"INFO","msg":"sender: closed","stream_id":"c62vcpz8"}
+{"time":"2025-04-22T08:11:44.178060496Z","level":"INFO","msg":"stream: closed","id":"c62vcpz8"}
