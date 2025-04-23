@@ -69,20 +69,21 @@ def test(model, test_loader, device):
     print(f"測試集準確率: {acc:.4f}")
     return acc
 
-def test_dynamic_conv(model_class, model_path, test_loader, device, channel_combos):
-    model_class.eval()
+def test_dynamic_conv(model, model_path, test_loader, device, channel_combos):
+    state_dict = torch.load(model_path, map_location=device)
+    model.load_state_dict(state_dict)
+    model.eval()
     results = {}
     with torch.no_grad():
         for name, ch_idxs in channel_combos.items():
             correct = 0
             total = 0
-            model = model_class(input_channels=len(ch_idxs)).to(device)
-            model.load_state_dict(torch.load(model_path, map_location=device))
-            model.eval()
             for images, labels in test_loader:
                 images, labels = images.to(device), labels.to(device)
-                images = images[:, ch_idxs, :, :]  # 子通道選取
-                outputs = model(images)
+                # 將不需要的 channel 設為 0
+                masked_images = torch.zeros_like(images)
+                masked_images[:, ch_idxs, :, :] = images[:, ch_idxs, :, :]
+                outputs = model(masked_images)
                 _, predicted = outputs.max(1)
                 total += labels.size(0)
                 correct += predicted.eq(labels).sum().item()
@@ -90,6 +91,7 @@ def test_dynamic_conv(model_class, model_path, test_loader, device, channel_comb
             print(f"[{name}] 測試集準確率: {acc:.4f}")
             results[name] = acc
     return results
+
 
 def main():
     args = parse_args()
@@ -116,7 +118,8 @@ def main():
             'GB': [1, 2],
             'RGB': [0, 1, 2]
         }
-        results = test_dynamic_conv(ResNet34_Dynamic, ckpt_path, test_loader, device, channel_combos)
+        model = ResNet34_Dynamic(input_channels=3, num_classes=100).to(device)
+        results = test_dynamic_conv(model, ckpt_path, test_loader, device, channel_combos)
         print("results:\n", results)
     else:
         # model = get_model(args.model).to(device)

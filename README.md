@@ -14,6 +14,7 @@
 
 ## 安裝與執行
 ```
+git clone https://github.com/Hsuanyu-wang/MILS_HW_1.git
 pip install -r requirements.txt
 python scripts/train.py
 python scripts/test.py

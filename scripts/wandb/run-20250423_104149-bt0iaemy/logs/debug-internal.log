@@ -1,9 +1,0 @@
-{"time":"2025-04-23T10:41:49.521709945Z","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/home/MILS_HW1/scripts/wandb/run-20250423_104149-bt0iaemy/logs/debug-core.log"}
-{"time":"2025-04-23T10:41:49.880798101Z","level":"INFO","msg":"created new stream","id":"bt0iaemy"}
-{"time":"2025-04-23T10:41:49.880824804Z","level":"INFO","msg":"stream: started","id":"bt0iaemy"}
-{"time":"2025-04-23T10:41:49.880875234Z","level":"INFO","msg":"writer: Do: started","stream_id":"bt0iaemy"}
-{"time":"2025-04-23T10:41:49.880921486Z","level":"INFO","msg":"sender: started","stream_id":"bt0iaemy"}
-{"time":"2025-04-23T10:41:49.880976005Z","level":"INFO","msg":"handler: started","stream_id":"bt0iaemy"}
-{"time":"2025-04-23T10:41:50.198070658Z","level":"INFO","msg":"Starting system monitor"}
-{"time":"2025-04-23T10:42:16.883498086Z","level":"INFO","msg":"Stopping system monitor"}
-{"time":"2025-04-23T10:42:16.88355008Z","level":"INFO","msg":"Stopped system monitor"}
