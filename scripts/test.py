@@ -11,7 +11,8 @@ from torchvision import transforms
 import argparse
 
 # 導入模型與資料集
-from models.wide_cnn import WideCNN
+# from models.wide_cnn import WideCNN
+from models.wide_cnn_new import Residual_WideCNN
 from models.resnet_34 import ResNet34
 from models.dynamic_conv import ResNet34_Dynamic
 from scripts.utils import MiniImageNetDataset
@@ -26,7 +27,8 @@ def parse_args():
 
 def get_model(model_type, in_channels=3, num_classes=100):
     if model_type == 'wide_cnn':
-        return WideCNN(in_channels=in_channels, num_classes=num_classes)
+        # return WideCNN(in_channels=in_channels, num_classes=num_classes)
+        return Residual_WideCNN(in_channels=in_channels, num_classes=num_classes)
     elif model_type == 'dynamic_conv':
         return ResNet34_Dynamic(input_channels=in_channels, num_classes=num_classes)
     elif model_type == 'resnet34':

@@ -312,8 +312,8 @@ def main():
     # 創建數據加載器
     # train_loader = DataLoader(train_set, batch_size=args.batch_size, shuffle=True)
     # val_loader = DataLoader(val_set, batch_size=args.batch_size, shuffle=False)
-    train_loader = DataLoader(train_set, batch_size=args.batch_size, shuffle=True, num_workers=4, pin_memory=True)
-    val_loader = DataLoader(val_set, batch_size=args.batch_size, shuffle=False, num_workers=4, pin_memory=True)
+    train_loader = DataLoader(train_set, batch_size=args.batch_size, shuffle=True, num_workers=16, pin_memory=True)
+    val_loader = DataLoader(val_set, batch_size=args.batch_size, shuffle=False, num_workers=16, pin_memory=True)
     
     # 初始化模型
     print(f"初始化{args.model}模型...")
