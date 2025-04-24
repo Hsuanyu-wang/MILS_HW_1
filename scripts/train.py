@@ -15,9 +15,11 @@ import wandb
 import argparse
 
 # 根據模型類型導入相應的模型
-from models.wide_cnn import WideCNN
+# from models.wide_cnn import WideCNN
+from models.wide_cnn_new import Residual_WideCNN
 from models.resnet_34 import ResNet34
 from models.dynamic_conv import ResNet34_Dynamic
+# from models.dynamic_conv_reg import ResNet34_Dynamic
 from scripts.utils import MiniImageNetDataset
 
 def parse_args():
@@ -34,7 +36,8 @@ def parse_args():
 def get_model(model_type, num_classes=100):
     """根據模型類型返回相應的模型實例"""
     if model_type == 'wide_cnn':
-        return WideCNN(in_channels=3, num_classes=num_classes)
+        # return WideCNN(in_channels=3, num_classes=num_classes)
+        return Residual_WideCNN(in_channels=3, num_classes=num_classes)
     elif model_type == 'dynamic_conv':
         return ResNet34_Dynamic(num_classes=num_classes)
     elif model_type == 'resnet34':

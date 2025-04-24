@@ -116,6 +116,7 @@ def main():
             'B': [2],
             'RG': [0, 1],
             'GB': [1, 2],
+            'RB': [0, 2],
             'RGB': [0, 1, 2]
         }
         model = ResNet34_Dynamic(input_channels=3, num_classes=100).to(device)

@@ -33,6 +33,9 @@ python train.py --model dynamic_conv --optimizer adam --lr 0.001
 # 訓練 ResNet34 模型
 python train.py --model resnet34 --optimizer adam --lr 0.001
 ```
+training完成將會產生檔案，結構如下圖:
+
+![alt text](image.png)
 
 test.py usage:
 ```
